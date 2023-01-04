@@ -19,7 +19,7 @@ font pango:"MesloLGS NF" 10
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:"MesloLGS NF" 10
 
-# default_border pixel 1
+default_border pixel 1
 # default_floating_border normal
 
 # hide_edge_borders none
@@ -199,3 +199,6 @@ exec --no-startup-id google-chrome-stable
 
 gaps inner 10
 gaps outer 10
+
+exec --no-startup-id nitrogen
+

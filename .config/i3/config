@@ -200,5 +200,5 @@ exec --no-startup-id google-chrome-stable
 gaps inner 10
 gaps outer 10
 
-exec --no-startup-id nitrogen
+exec --no-startup-id nitrogen --restore
 

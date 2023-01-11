@@ -194,7 +194,11 @@ bar {
         status_command i3status
 }
 
-exec xrandr --output HDMI-1-0 --mode 1920x1080 --left-of eDP-1
+# optimus-manager mode hybrid
+exec xrandr --output eDP-1 --mode 1920x1080 --primary --rate 60.00 --scale 1x1 --output HDMI-1-0 --rate 144.01 --mode 1920x1080 --left-of eDP-1
+# optimus-manager mode nvidia
+exec xrandr --output HDMI-0 --primary --mode 1920x1080 --rate 144.01 --output eDP-1-1 --mode 1920x1080 --rate 60.00 --right-of HDMI-0
+
 exec --no-startup-id google-chrome-stable
 
 gaps inner 10

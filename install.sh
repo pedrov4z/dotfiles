@@ -5,6 +5,7 @@ ln -s $SCRIPTPATH/.alacritty.yml ~/.alacritty.yml
 ln -s $SCRIPTPATH/.p10k.zsh ~/.p10k.zsh
 ln -s $SCRIPTPATH/.vimrc ~/.vimrc
 ln -s $SCRIPTPATH/.zshrc ~/.zshrc
+ln -s $SCRIPTPATH/.Xresources ~/.Xresources
 
 git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim

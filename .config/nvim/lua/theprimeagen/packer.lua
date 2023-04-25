@@ -13,19 +13,27 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
+	use({
 
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
+		'rose-pine/neovim',
+		as = 'rose-pine',
+		config = function()
+			vim.cmd('colorscheme rose-pine')
+		end
+	})
 
   use {
 	  "windwp/nvim-autopairs",
 	  config = function() require("nvim-autopairs").setup {} end
   }
 
+	use 'neovim/nvim-lspconfig'
+
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}
+	use 'ThePrimeagen/vim-be-good'
+	use 'ThePrimeagen/harpoon'
 end)
 

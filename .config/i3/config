@@ -206,3 +206,6 @@ gaps outer 10
 
 exec --no-startup-id nitrogen --restore
 
+floating_minimum_size 450 x 450
+floating_maximum_size 1000 x 1000
+

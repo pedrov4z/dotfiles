@@ -25,5 +25,4 @@ rm -rf ~/.config/nvim
 ln -s $SCRIPTPATH/.config/nvim ~/.config/nvim
 rm -rf ~/.config/i3
 ln -s $SCRIPTPATH/.config/i3 ~/.config/i3
-rm -rf ~/.config/nitrogen
-ln -s $SCRIPTPATH/.config/nitrogen ~/.config/nitrogen
+

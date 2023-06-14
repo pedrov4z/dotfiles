@@ -35,5 +35,15 @@ return require('packer').startup(function(use)
 	}
 	use 'ThePrimeagen/vim-be-good'
 	use 'ThePrimeagen/harpoon'
+	use {
+		'YannickFricke/codestats.nvim',
+		rocks = "lunajson",
+		config = function()
+			require('codestats-nvim').setup({
+				token = os.getenv('CODESTATS_API_KEY')
+			})
+		end,
+		requires = {{'nvim-lua/plenary.nvim'}}
+	}
 end)
 

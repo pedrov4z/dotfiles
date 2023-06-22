@@ -49,12 +49,7 @@ return require('packer').startup(function(use)
 		"lukas-reineke/indent-blankline.nvim",
 		config = function()
 			opts = {}
-			-- Other blankline configuration here
-			require("indent_blankline").setup(require("indent-rainbowline").make_opts(opts))
 		end,
-		requires = {
-			"TheGLander/indent-rainbowline.nvim",
-		},
 	}
 end)
 

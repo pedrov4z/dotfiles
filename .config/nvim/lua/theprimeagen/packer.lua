@@ -51,5 +51,6 @@ return require('packer').startup(function(use)
 			opts = {}
 		end,
 	}
+	use 'APZelos/blamer.nvim'
 end)
 
